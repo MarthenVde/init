@@ -1,0 +1,3 @@
+#!/bin/sh
+USER=test
+kill -s 9 `pgrep -u $USER` & sudo deluser -f $USER
