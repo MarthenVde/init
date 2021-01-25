@@ -1,0 +1,13 @@
+ssh session:
+# User generates ssh key on their machine
+ssh-keygen -t rsa
+# Copy user's public ssh key from ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
+# Add to authorised keys on the vm
+vi ~/.ssh/authorized_keys
+# Ssh into the vm
+ssh <user>@<ip>
+
+graphic session:
+connect as a new graphical session user
+$> su - <username>
